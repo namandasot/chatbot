@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 from flask import Flask,request,jsonify
 from gevent.wsgi import WSGIServer
+app = Flask(__name__)
 
 @app.route('/')
 def get():
@@ -9,7 +10,7 @@ def get():
 	
 if __name__ == '__main__':
 	http_server = WSGIServer(('0.0.0.0', 5050), app)
-    http_server.serve_forever()
+	http_server.serve_forever()
 
 
 
