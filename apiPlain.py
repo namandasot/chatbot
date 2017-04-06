@@ -10,9 +10,9 @@ def get():
 
 	
 if __name__ == '__main__':
-	 #app.run(environ.get('PORT'))
-	 http_server = WSGIServer(('0.0.0.0', 5000), app)
-	 http_server.serve_forever()
+         #app.run(environ.get('PORT'))
+         http_server = WSGIServer(('0.0.0.0', 5000), app)
+         http_server.serve_forever()
 
 
 
