@@ -1,1 +1,1 @@
-web:guicorn apiPlain:app
+web:gunicorn apiPlain:app
