@@ -1,1 +1,1 @@
-web: python apiPlain.py
+web:guicorn apiPlain:app
